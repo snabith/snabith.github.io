@@ -4,7 +4,7 @@ categories: [homelab]
 tags: [homelab,vyos]     # TAG names should always be lowercase
 ---
 
-Download: [VyOS Community](https://vyos.net/get/) (select legacy > ==ova for vmware==)
+Download: [VyOS Community](https://vyos.net/get/) (select legacy > ova for vmware)
 
 ```bash
 # for vyos
