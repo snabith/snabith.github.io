@@ -3,7 +3,6 @@ title: VyOS setup
 categories: [homelab]
 tags: [homelab,vyos]     # TAG names should always be lowercase
 ---
-[main](/posts/lab_main)
 
 Download: [VyOS Community](https://vyos.net/get/) (select legacy > ova for vmware)
 
@@ -45,11 +44,7 @@ port forward on vyos: [NAT — VyOS 1.3.x (equuleus) documentation](https://docs
 # static ip assignments
 set protocols static arp 18.0.0.222 hwaddr 00:0C:29:98:D1:FA
 show protocols static arp
-```
 
-## VyOS router Port Translation
-
-```bash
 # port forwarding using NAT
 set nat destination rule 10 description 'Port Forward: HTTP to 18.0.0.222'
 set nat destination rule 10 destination port '80'

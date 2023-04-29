@@ -1,1 +1,1 @@
-[Home Lab Manual](https://sama-sn.github.io/posts/lab_main/)
+![post](/posts/2023-04-22-lab_main)
