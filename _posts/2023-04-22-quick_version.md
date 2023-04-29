@@ -5,6 +5,7 @@ tags: [homelab, domain, dns, dnscat2]     # TAG names should always be lowercase
 ---
 
 [main](/posts/lab_main)
+
 ## Gain `root` access on metasploitable2
 ### Gain `www-data` user access:
 ```bash
