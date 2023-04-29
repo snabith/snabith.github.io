@@ -30,5 +30,5 @@ tags: [homelab,pfsense]     # TAG names should always be lowercase
 ![lan](/assets/img/fw_rules_lan.png)
 ![dmz](/assets/img/fw_rules_dmz.png)
 
-## Port-Translation:
+## Port-Forwarding:
 ![port-translation](/assets/img/fw_portforward_metasploitable2.png)

@@ -20,7 +20,7 @@ timezone: America/New_York
 
 title: Home Lab # the main title
 
-tagline: A home lab documentation. # it will display as the sub-title
+tagline: A home lab documentation # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
