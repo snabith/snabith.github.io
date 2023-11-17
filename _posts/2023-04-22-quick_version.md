@@ -4,7 +4,7 @@ categories: [homelab]
 tags: [homelab, domain, dns, dnscat2]     # TAG names should always be lowercase
 ---
 
-[main](/posts/lab_main)
+[main](/posts/homelab_intro)
 
 ## Gain `root` access on metasploitable2
 ### Gain `www-data` user access:
@@ -100,4 +100,6 @@ dnscat2>
 ## Active Directory setup
 [Active Directory on Azure](https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f)
 
-TCM security's PEH course is a good source to learn about Active Directory setup and pentesting.
+- I learnt AD through PEH course by TCM security. I highly recommend going through the course if you are serious about active directory pentesting. The above link is a reommnedation by Heath Adams, and it was a great source for setting up your AD network on Azure (similar setup locally). 
+
+Update: The link is now medium members only. So, go with: https://refabr1k.gitbook.io/oscp/windows/attacking-ad/ad-hacking-lab-setup if you can't use the medium link.

@@ -3,7 +3,7 @@ title: VyOS setup
 categories: [homelab]
 tags: [homelab,vyos]     # TAG names should always be lowercase
 ---
-[main](/posts/lab_main)
+[main](/posts/homelab_intro)
 
 Download: [VyOS Community](https://vyos.net/get/) (select legacy > ova for vmware)
 

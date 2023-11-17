@@ -3,7 +3,9 @@ title: VMware configuration
 categories: [homelab]
 tags: [homelab,vmware]     # TAG names should always be lowercase
 ---
-[main](/posts/lab_main)
+[main](/posts/homelab_intro)
+
+Vmware configuration settings for the [homelab setup](/posts/homelab_intro)
 
 ## vmware settings:
 ![VMware Network Settings](/assets/img/vmware_nw.png){: width="60%"}

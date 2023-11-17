@@ -4,7 +4,7 @@ categories: [homelab]
 tags: [homelab,pfsense]     # TAG names should always be lowercase
 ---
 
-[main](/posts/lab_main)
+[main](/posts/homelab_intro)
 ### Pfsense installation steps:
 - Use the ISO, install, go with the defaults
 	- Official: [Installation Walkthrough - pfSense Documentation (netgate.com)](https://docs.netgate.com/pfsense/en/latest/install/install-walkthrough.html)

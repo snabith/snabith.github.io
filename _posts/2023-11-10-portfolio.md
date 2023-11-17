@@ -1,7 +1,5 @@
 ---
-title: Virtual enterprise network intro
-categories: [homelab, main]
-tags: [homelab,main]     # TAG names should always be lowercase
+title: Portfolio
 pin: true
 ---
 

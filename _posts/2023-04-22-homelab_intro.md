@@ -6,19 +6,16 @@ pin: true
 ---
 ## Project overview:
 ### Intro:
-This project aims to provide a manual/guide to creating a home lab. This home lab helps one to create an enterprise network on a server. You can simulate attacks, check how the firewall/IDS works, understand the logs and network traffic, and learn more from it. These instructions are provided based on what I could take away from Jeff McJunkin's [kickass home lab](http://bit.ly/kickasslab) [SANS youtube](https://youtu.be/uzqwoufhwyk)
+This post can help you setup a home lab on vmware. You can simulate attacks, check how a firewall/IDS works, understand the logs and network traffic, and learn more from it. These instructions are provided based on what I could take away from Jeff McJunkin's [kickass home lab](http://bit.ly/kickasslab) [SANS youtube](https://youtu.be/uzqwoufhwyk). It's a great resource for creating your own lab.
 
-### [The `refresher` mode:](/posts/quick_version)
-1. Gain root on metasploitable2
-2. Setup an authoritative DNS server
-3. DNS based attacks
-	1. Data exfiltration
-	2. C2 using dnscat2
-4. Setup Active Directory.
+If you set this up previously and just want a quick review of the commands while replicating the attacks: ### [Refresher mode](/posts/quick_version)
+
+What can one takeaway from the homelab series:
+
 
 ### How?
 Using an example. It contains:
-- Details on how to set up the network with a web server.
+- Details on how to set up a network using vmware.
 - An example attack scenario that involves privilege escalation, and persistence (`dnscat2`)
 - Instructions on how to:
 	- Collect the network traffic (`pfsense` packet capture)
@@ -112,6 +109,12 @@ Using an example. It contains:
 My takeaway:
 - I believe that something like this could've been useful for my past self to understand basic concepts of networking and penetration testing. So, I'm sure it can help someone who wants to learn or teach.
 - Looks too simple or basic? Good, that was the point. Can you do better? That is the expected outcome. If you can understand and follow along, you can make and test better scenarios.
+
+
+## Personal recommendations:
+- TCM security's PEH course is a great source to learn about Active Directory setup and pentesting. I highly recommend their PEH course, EPP, and MPP courses. You can find more about the courses offered by TCM security here: [academy.tcm-sec.com](https://academy.tcm-sec.com/courses)
+- Althoug tryhackme.com is great place for beginners to get a hang of practical tools that are used in cybersecurity, I highly recommend anyone entering the cybersecurity domain to learn and understand network security concepts. Tools can help you do something, understanding the concepts can help you take better decisions in securing an organization. The later matters more.
+	- I will be making blogs explaining few network securty concepts using practical examples through socket programming.
 
 
 [^1]: This is faster to set up, and easier to work with when compared to working with a level 1 hypervisor.
