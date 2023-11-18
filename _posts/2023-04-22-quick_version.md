@@ -1,7 +1,8 @@
 ---
 title: A quick referesher of the homelab
 categories: [homelab]
-tags: [homelab, domain, dns, dnscat2]     # TAG names should always be lowercase
+tags: [homelab, domain, dns, dnscat2] # TAG names should always be lowercase
+img_path: /assets/img/homelab
 ---
 
 [main](/posts/homelab_intro)
@@ -59,7 +60,7 @@ stty raw -echo; fg
 3. Get command and control over DNS
 
 Network traffic:
-![dns](/assets/img/dnscat2_traffic_blur.png)
+![dns](dnscat2_traffic_blur.png)
 
 ## Setup an authoritative DNS server:
 If you are using AWS: [STOK’s video](https://youtu.be/p8wbebEgtDk)

@@ -18,12 +18,12 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Home Lab # the main title
+title: NetSec DMZ # the main title
 
-tagline: A home lab documentation # it will display as the sub-title
+tagline: Curiosity saved the cats! # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  A Cybersecurity journey blog with network security related concepts intended for beginners to learn from.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ""

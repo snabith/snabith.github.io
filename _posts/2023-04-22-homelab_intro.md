@@ -1,7 +1,8 @@
 ---
 title: Virtual enterprise network intro
 categories: [homelab, main]
-tags: [homelab,main]     # TAG names should always be lowercase
+tags: [homelab, main] # TAG names should always be lowercase
+img_path: /assets/img/homelab
 pin: true
 ---
 ## Project overview:
@@ -11,7 +12,6 @@ This post can help you setup a home lab on vmware. You can simulate attacks, che
 If you set this up previously and just want a quick review of the commands while replicating the attacks: ### [Refresher mode](/posts/quick_version)
 
 What can one takeaway from the homelab series:
-
 
 ### How?
 Using an example. It contains:
@@ -52,7 +52,7 @@ Using an example. It contains:
 ## Home lab summary:
 
 ### Example network:
-![Home Lab Network Diagram](/assets/img/home_lab_nw.png)
+![Home Lab Network Diagram](home_lab_nw.png)
 
 ### Phase1 - Setup and initial access:
 #### Network - VMWare configuration:
@@ -102,14 +102,12 @@ Using an example. It contains:
 ### Active Directory Setup:
 [Active Directory on Azure](https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f)
 
-
 ## Note
 1. Use LAN segments if you are dealing with malware analysis. You may need to follow additional steps to isolate the machine.
 
 My takeaway:
 - I believe that something like this could've been useful for my past self to understand basic concepts of networking and penetration testing. So, I'm sure it can help someone who wants to learn or teach.
 - Looks too simple or basic? Good, that was the point. Can you do better? That is the expected outcome. If you can understand and follow along, you can make and test better scenarios.
-
 
 ## Personal recommendations:
 - TCM security's PEH course is a great source to learn about Active Directory setup and pentesting. I highly recommend their PEH course, EPP, and MPP courses. You can find more about the courses offered by TCM security here: [academy.tcm-sec.com](https://academy.tcm-sec.com/courses)

@@ -1,8 +1,10 @@
 ---
 title: VyOS setup
 categories: [homelab]
-tags: [homelab,vyos]     # TAG names should always be lowercase
+tags: [homelab, vyos] # TAG names should always be lowercase
+img_path: /assets/img/homelab
 ---
+
 [main](/posts/homelab_intro)
 
 Download: [VyOS Community](https://vyos.net/get/) (select legacy > ova for vmware)
@@ -40,7 +42,9 @@ exit
 show interfaces ethernet eth1
 delete interfaces ethernet eth1 address <address_to_delete>
 ```
+
 port forward on vyos: [NAT — VyOS 1.3.x (equuleus) documentation](https://docs.vyos.io/en/equuleus/configuration/nat/index.html)
+
 ```bash
 # static ip assignments
 set protocols static arp 18.0.0.222 hwaddr 00:0C:29:98:D1:FA
