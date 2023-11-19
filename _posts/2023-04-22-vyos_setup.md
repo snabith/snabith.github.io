@@ -1,6 +1,6 @@
 ---
 title: VyOS setup
-categories: [homelab]
+categories: [Homelab]
 tags: [homelab, vyos] # TAG names should always be lowercase
 img_path: /assets/img/homelab
 ---

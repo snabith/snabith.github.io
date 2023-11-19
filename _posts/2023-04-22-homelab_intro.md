@@ -1,15 +1,15 @@
 ---
 title: Virtual enterprise network intro
-categories: [homelab, main]
-tags: [homelab, main] # TAG names should always be lowercase
+categories: [Homelab]
+tags: [homelab] # TAG names should always be lowercase
 img_path: /assets/img/homelab
 pin: true
 ---
 ## Project overview:
 ### Intro:
-This post can help you setup a home lab on vmware. You can simulate attacks, check how a firewall/IDS works, understand the logs and network traffic, and learn more from it. These instructions are provided based on what I could take away from Jeff McJunkin's [kickass home lab](http://bit.ly/kickasslab) [SANS youtube](https://youtu.be/uzqwoufhwyk). It's a great resource for creating your own lab.
+This post can help you set up a home lab on vmware. You can simulate attacks, check how a firewall/IDS works, understand the logs and network traffic, and learn more from it. These instructions are provided based on what I could take away from Jeff McJunkin's [kickass home lab](http://bit.ly/kickasslab) [SANS youtube](https://youtu.be/uzqwoufhwyk). It's a great resource for creating your own lab.
 
-If you set this up previously and just want a quick review of the commands while replicating the attacks: ### [Refresher mode](/posts/quick_version)
+If you set this up previously and just want a quick review of the commands while replicating the attacks: [Refresher mode](/posts/quick_version)
 
 What can one takeaway from the homelab series:
 
@@ -22,12 +22,12 @@ Using an example. It contains:
 	- Setup Active Directory
 
 ### My favorite parts:
-1. Setting up your own Authoritative DNS server for DNS based c2 using dnscat2
+1. Setting up your own Authoritative DNS server for DNS-based c2 using dnscat2
 2. Active Directory setup
 3. Port-forwarding setup on `PfSense` and `VyOS` router
 
 ### How did this help me:
-1. I wanted to see how the network traffic looks like during a DNS based c2. Good thing I had a lab setup, I was able to understand that in an instant. 
+1. I wanted to see what the network traffic looks like during a DNS-based c2. Good thing I had a lab setup, I was able to understand that in an instant. 
 2. Now, because it is on a level2 hypervisor - VMware workstation pro, I can copy the `pcap` files to my host OS, share, teach, train, and get feedback faster.
 
 ### What I found challenging:
@@ -35,9 +35,9 @@ Using an example. It contains:
 2. Authoritative DNS server - DNS propagation and TTL.
 
 ### Eye-openers:
-1. Snapshots ~ Time travel.(Dormamu, I've co...)
+1. Snapshots ~ Time travel. (Dormamu, I've co...)
 2. For DNS, set low TTL values till things work out. 
-3. After you know how to setup `pfsense`, you wonder how you struggled with such a simple and elegant software
+3. After you know how to set up `pfsense`, you wonder how you struggled with such a simple and elegant software
 
 ### Possible use cases:
 - Perform an attack -> export the network dump (`pcap` files) -> train employees to find the exploited vulnerabilities
@@ -61,13 +61,13 @@ Using an example. It contains:
 - Make another host-only network (`10.10.10.0/24`) -DMZ network (configured as OPT1 on Pfsense) with the metasploitable2 machine. The metaspoloitable2 machine has a connection to the LAN network but is currently offline.
 	- Port forward the default metasploitable2's website to the WAN port 8080.
 - Create one more host-only network (`18.0.0.0/24`) for the attacker. Install the VyOS router with the same gateway (`192.168.189.2/24`) as the PfSense WAN network.
-	- This is an extra step that can help you simulate your scenario or to make it a bit more realistic/challenging.
+	- This is an extra step that can help you simulate your scenario and make it a bit more realistic/challenging.
 	- Enable port-forwarding on the attacker's router (VyOS router - port 80, 443) for the reverse shells. 
 
 #### Pfsense configuration:
 - Install and configure the pfsense networks. [HowTo- Pfsense configuration](/posts/pfsense_configuration)
 - Assign static addresses to the machines
-- Setup the firewall rules to allow inbound traffic to the DMZ network's webserver.
+- Set up the firewall rules to allow inbound traffic to the DMZ network's webserver.
 - Other rules: [firewall](/posts/pfsense_configuration/#firewall-rules)
 
 #### Setup port-forwarding on pfsense:
@@ -102,6 +102,10 @@ Using an example. It contains:
 ### Active Directory Setup:
 [Active Directory on Azure](https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f)
 
+- I learnt AD through PEH course by TCM security. I highly recommend going through the course if you are serious about active directory pentesting. The above link is a recommendation by Heath Adams, and it was a great source for setting up your AD network on Azure (similar setup locally). 
+
+Update: The link is now for medium members only. So, go with: https://refabr1k.gitbook.io/oscp/windows/attacking-ad/ad-hacking-lab-setup if you can't use the medium link.
+
 ## Note
 1. Use LAN segments if you are dealing with malware analysis. You may need to follow additional steps to isolate the machine.
 
@@ -111,8 +115,8 @@ My takeaway:
 
 ## Personal recommendations:
 - TCM security's PEH course is a great source to learn about Active Directory setup and pentesting. I highly recommend their PEH course, EPP, and MPP courses. You can find more about the courses offered by TCM security here: [academy.tcm-sec.com](https://academy.tcm-sec.com/courses)
-- Althoug tryhackme.com is great place for beginners to get a hang of practical tools that are used in cybersecurity, I highly recommend anyone entering the cybersecurity domain to learn and understand network security concepts. Tools can help you do something, understanding the concepts can help you take better decisions in securing an organization. The later matters more.
-	- I will be making blogs explaining few network securty concepts using practical examples through socket programming.
+- Although tryhackme.com is a great place for beginners to get a hang of practical tools that are used in cybersecurity, I highly recommend anyone entering the cybersecurity domain to learn and understand network security concepts. Tools can help you do something, understanding the concepts can help you make better decisions in securing an organization. The latter matters more.
+	- I will be making blogs explaining a few network security concepts using practical examples through socket programming.
 
 
 [^1]: This is faster to set up, and easier to work with when compared to working with a level 1 hypervisor.

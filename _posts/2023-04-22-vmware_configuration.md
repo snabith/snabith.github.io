@@ -1,6 +1,6 @@
 ---
 title: VMware configuration
-categories: [homelab]
+categories: [Homelab]
 tags: [homelab, vmware] # TAG names should always be lowercase
 img_path: /assets/img/homelab
 ---
@@ -13,7 +13,7 @@ Vmware configuration settings for the [homelab setup](/posts/homelab_intro)
 
 ![VMware Network Settings](vmware_nw.png){: width="60%"}
 
-- Uncheck DHCP on WAN, LAN, and DMZ networks to avoid clash between vmware and pfsense
+- Uncheck DHCP on WAN, LAN, and DMZ networks to avoid a clash between vmware and pfsense
 
 ### VMWare NAT (WAN) settings:
 

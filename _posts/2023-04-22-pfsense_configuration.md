@@ -1,6 +1,6 @@
 ---
 title: Pfsense_config
-categories: [homelab]
+categories: [Homelab]
 tags: [homelab, pfsense] # TAG names should always be lowercase
 img_path: /assets/img/homelab
 ---

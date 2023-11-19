@@ -1,7 +1,7 @@
 ---
-title: A quick referesher of the homelab
-categories: [homelab]
-tags: [homelab, domain, dns, dnscat2] # TAG names should always be lowercase
+title: A quick refresher of the homelab
+categories: [Homelab]
+tags: [homelab, dns, dnscat2] # TAG names should always be lowercase
 img_path: /assets/img/homelab
 ---
 
@@ -68,7 +68,7 @@ Else, (Still, watch that. It's a good learning src.) I made one:
 1. Spin up a droplet. [droplet_setup]
 2. [Get a domain name](/posts/c2_over_dns/#get-a-domain-name) and point the nameservers to digitalocean nameservers
 3. Setup the domain on digitalocean
-4. Set low ttl for each DNS record type (It may take sometime for DNS propagation.)
+4. Set low ttl for each DNS record type (It may take some time for DNS propagation.)
 
 ## C2 using dnscat2
 Download dnscat2: `git clone https://github.com/iagox86/dnscat2.git`
@@ -101,6 +101,6 @@ dnscat2>
 ## Active Directory setup
 [Active Directory on Azure](https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f)
 
-- I learnt AD through PEH course by TCM security. I highly recommend going through the course if you are serious about active directory pentesting. The above link is a reommnedation by Heath Adams, and it was a great source for setting up your AD network on Azure (similar setup locally). 
+- I learnt AD through PEH course by TCM security. I highly recommend going through the course if you are serious about active directory pentesting. The above link is a recommendation by Heath Adams, and it was a great source for setting up your AD network on Azure (similar setup locally). 
 
-Update: The link is now medium members only. So, go with: https://refabr1k.gitbook.io/oscp/windows/attacking-ad/ad-hacking-lab-setup if you can't use the medium link.
+Update: The link is now for medium members only. So, go with: https://refabr1k.gitbook.io/oscp/windows/attacking-ad/ad-hacking-lab-setup if you can't use the medium link.
