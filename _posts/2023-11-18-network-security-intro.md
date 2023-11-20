@@ -20,28 +20,28 @@ To know how to attack, you must also know how to defend and vice versa. This Net
 	3. Availability - Cannot deny access to an otherwise accessible data or resource
 	4. Authenticity - Cannot imitate a legitimate user. A basis for making trust decisions. 
 	5. Non-repudiation - Cannot deny performing certain actions. \[This property is omitted to maintain anonymity and privacy.]
-5. Explain threat models
+5. Explain threat models: 
 	A threat model is developed by assuming that the adversary possesses certain capabilities. These assumptions help in developing solutions that can counter (either avoid, defend, or recover from) expected threats. 
-6. Why use threat models
-	A good use case is the fact that it can give order to a group's problem-solving.
-7. A trusted computing base refers to the set of computer system components that must be trusted
-	>A given piece of hardware or software is a part of the TCB iff it has been designed to be a part of the mechanism that provides its security to the computer system. In [operating systems](https://en.wikipedia.org/wiki/Operating_system "Operating system"), this typically consists of the kernel (or [microkernel](https://en.wikipedia.org/wiki/Microkernel "Microkernel")) and a select set of system utilities ([wiki](https://en.wikipedia.org/wiki/Trusted_computing_base))
-	> Minimize the `trust` and TCB (Trust computing base). Trust gets weird in cloud environments
-
+6. Why use threat models: 
+	It can give order to a group's problem-solving.
+7. A trusted computing base (`TCB`) refers to the set of computer system components that must be trusted
+	> A given piece of hardware or software is a part of the TCB iff it has been designed to be a part of the mechanism that provides its security to the computer system. In [operating systems](https://en.wikipedia.org/wiki/Operating_system "Operating system"), this typically consists of the kernel (or [microkernel](https://en.wikipedia.org/wiki/Microkernel "Microkernel")) and a select set of system utilities ([wiki](https://en.wikipedia.org/wiki/Trusted_computing_base)).
+	
+	Trust in cloud environments is beyond me for now but always remember to minimize the `trust` and TCB (Trust computing base).
 8. Trust should not be transitive but if you choose to trust an entity B for a functionality F, you should be aware that F may be affected by another entity C that is trusted by B. This can be practiced internally within an organization. A good example would be the Active Directory's transitive trust property while extending trust between forests. 
 
 9. Policies are part of security. So, what should I know about a security policy?
-	A security policy defines what it means for an organization to be secure. Usually, each policy has its purpose and limitations. ([Sans infosec policies](https://www.sans.org/information-security-policy/))
+	- A security policy defines what it means for an organization to be secure. Usually, each policy has its purpose and limitations. ([Sans infosec policies](https://www.sans.org/information-security-policy/))
 	To implement/enforce a security policy, you need to understand the concepts of access control(Defining who can access what), Authentication, and Authorization.
 10. Fundamental terminology: 
-    Principals - Participants of the policy/system. Ex: User
-    Subjects - act on behalf of the principal. Ex: User's program
-    Objects - Resources acted upon by subjects. Ex: Files
-    Access control classes - Distinguished based on who can define the rules.
-    Computer security models - schemes for specifying and enforcing security policies. ([wiki](https://en.wikipedia.org/wiki/Computer_security_model)).
-        Access Control Lists - $\{<Subj_0,Obj_0,RW>,<S_1,O_1,RX>...\}$
-        Simple policies used in filesystems and networks(traffic control)
-        Capability based security([wiki](https://en.wikipedia.org/wiki/Capability-based_security)) - Token based security - revocation control
+    - Principals - Participants of the policy/system. Ex: User
+    - Subjects - act on behalf of the principal. Ex: User's program
+    - Objects - Resources acted upon by subjects. Ex: Files
+    - Access control classes - Distinguished based on who can define the rules.
+    - Computer security models - schemes for specifying and enforcing security policies. ([wiki](https://en.wikipedia.org/wiki/Computer_security_model)).
+        - Access Control Lists - $\{<Subj_0,Obj_0,RW>,<S_1,O_1,RX>...\}$
+        - Simple policies used in filesystems and networks(traffic control)
+        - Capability-based security([wiki](https://en.wikipedia.org/wiki/Capability-based_security)) - Token-based security - revocation control
 	
 ## Principles for Securing Systems
 
@@ -54,7 +54,7 @@ To know how to attack, you must also know how to defend and vice versa. This Net
 - Think of internal pentests.
 
 ### Fail-safe Defaults
-- Consider an average network firewall system, it implements a default deny policy. (Say, you are using a digital oceans droplet, you have to explicitly set traffic rules to enable incoming traffic to ports). So, even if the user go with the default settings, the system is relatively secure. That's an example of fail-safe defaults.
+- Consider an average network firewall system, it implements a default deny policy. (Say, you are using a digital oceans droplet, you have to explicitly set traffic rules to enable incoming traffic to ports). So, even if the user goes with the default settings, the system is relatively secure. That's an example of fail-safe defaults.
 - The opposite would be Active Directory. The default policies help to set up the system but not to secure the system. This is for backward compatibility reasons and performance reasons(Ex: SMB signing)
 
 ### Complete Mediation

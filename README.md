@@ -1,1 +1,1 @@
-[Home-Lab Manual](https://snabith.github.io/posts/lab_main/)
+[snabith.github.io](https://snabith.github.io)
