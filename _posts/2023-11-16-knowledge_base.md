@@ -1,5 +1,5 @@
 ---
-title: Knowledge Base
+title: Knowledge Base - [Start Here]
 categories: [knowledge Base]
 tags: [netsec]     # TAG names should always be lowercase
 pin: true
@@ -12,7 +12,7 @@ A periodic review should help.
 - This page serves as a guide to what one can learn from this site.
 
 ## Series list:
-### Homelab series
+### [Homelab series](/posts/homelab_intro):
 - Use VMware to set up a virtual lab environment.
     - Learn how to set up the networks, install a firewall, set the firewall rules, install multiple operating systems, host a web server, set up a virtual router, and enable port-forwarding to simulate an attack.
 - Perform your first attack: recon > scan > initial access > recon > escalate privileges > set up persistence.
@@ -22,7 +22,7 @@ A periodic review should help.
 - Active directory pentesting resources.
 - Recommendations, and takeaways from the series. 
 
-### Network security series
+### [Network security series](/posts/network-security-intro):
 - Network security concepts.
 - Common attacks at each layer.
 - DNS, attacks against DNS, DNSSEC, and short notes on BGP security properties.
@@ -31,11 +31,11 @@ A periodic review should help.
 - Practical implementation of attacks, and mitigations using socket programming.
 - Web security concepts: security headers, HSTS, CSP, CORS, and other security standards.
 
-### Portswigger Web academy seires
+### [Portswigger Web academy seires](/posts/burp-suite-intro):
 - One-page summaries of what I learnt from each module of port-swigger web academy.
 - Lab solutions and scripts.
 
-###  Pentest series:
+### Pentest series:
 - Summaries on how I approach a pentest.
 - Insights and resources that I found useful through my journey towards my PNPT certification. 
 

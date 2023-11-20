@@ -3,7 +3,7 @@ title: Virtual enterprise network intro
 categories: [Homelab]
 tags: [homelab] # TAG names should always be lowercase
 img_path: /assets/img/homelab
-pin: true
+pin: false
 ---
 ## Project overview:
 ### Intro:

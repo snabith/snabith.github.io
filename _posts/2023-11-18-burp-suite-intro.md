@@ -7,4 +7,6 @@ categories: [Web Security]
 img_path:
 author: Snabith
 ---
-Includes takeaways, and links to my Burp suite journey. 
+Includes takeaways, and links to my Burp suite journey. [Web Security Academy](https://portswigger.net/web-security)
+
+[SQLi](/posts/wa-sqli)
