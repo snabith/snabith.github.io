@@ -11,6 +11,11 @@ A periodic review should help.
 
 - This page serves as a guide to what one can learn from this site.
 
+### Recent updates:
+- I recently finished my final round of interviews with Meta for the Product Security Engineer role. Yesterday, they informed me that I was not selected for the role. Although I was devastated (wasn't expecting that), I am happy that I got an opportunity to speak with those security professionals. 
+- Jenkins integration with GitHub for DevSecOps.
+- [Fixed] AWS Lightsail CPU usage issue => add swap space to the ubuntu server.
+
 ## Series list:
 ### [Homelab series](/posts/homelab_intro):
 - Use VMware to set up a virtual lab environment.
