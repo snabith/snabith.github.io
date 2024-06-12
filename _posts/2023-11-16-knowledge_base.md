@@ -12,7 +12,9 @@ A periodic review should help.
 - This page serves as a guide to what one can learn from this site.
 
 ### Recent updates:
-- I recently finished my final round of interviews with Meta for the Product Security Engineer role. After completing my final round of interviews, I received news that I wasn't selected for the position. While I was initially disappointed (I hadn't expected that outcome), I'm grateful for the opportunity to have connected with experienced security professionals. 
+- Back on the Portswigger series. I plan to wrap this up in the next two months. 
+- Wasn't selected. Disappointed(I hadn't expected that outcome) but, I'm grateful for the opportunity to connect with experienced security professionals. Gotta try harder!
+- I finished my final round of interviews with Meta for the Product Security Engineer role!
 - Jenkins integration with GitHub for DevSecOps.
 - [Fixed] AWS Lightsail CPU usage issue => Add swap space to the Ubuntu server.
 
